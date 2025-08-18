@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>MESK ResponseEntity</Title>
+        <Authors>Mehmet Solak</Authors>
+        <Description>A lightweight and flexible response entity library for .NET, designed to standardize API responses with success, failure, and validation handling using a fluent API approach.</Description>
+        <Copyright>Copyright 2025</Copyright>
+        <PackageProjectUrl>https://github.com/knetic0/MESK.ResponseEntity</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/knetic0/MESK.ResponseEntity/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/knetic0/MESK.ResponseEntity</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>result;response;entity;fluentapi;</PackageTags>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="icon.png" Pack="true" PackagePath="" />
+        <None Include="README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+</Project>
