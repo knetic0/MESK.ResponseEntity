@@ -4,7 +4,7 @@ namespace MESK.ResponseEntity;
 
 public sealed class SucceededResponseEntity<T> : ResponseEntity<T>
 {
-    public SucceededResponseEntity() : base(true,  HttpStatusCode.OK) { }
+    internal SucceededResponseEntity() : base(true,  HttpStatusCode.OK) { }
     
     public SucceededResponseEntity<T> WithData(T data)
     {

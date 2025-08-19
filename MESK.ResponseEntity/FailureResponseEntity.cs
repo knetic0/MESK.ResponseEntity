@@ -4,7 +4,7 @@ namespace MESK.ResponseEntity;
 
 public sealed class FailureResponseEntity<T> : ResponseEntity<T>
 {
-    public FailureResponseEntity() : base(false, HttpStatusCode.BadRequest) { }
+    internal FailureResponseEntity() : base(false, HttpStatusCode.BadRequest) { }
     
     public FailureResponseEntity<T> WithValidationErrors(Dictionary<string, string> validationErrors)
     {
