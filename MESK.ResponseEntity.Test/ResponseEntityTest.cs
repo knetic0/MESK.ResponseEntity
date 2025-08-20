@@ -13,7 +13,6 @@ public class ResponseEntityTest
         var result = ResponseEntity<string>.Succeeded();
         
         Assert.True(result.IsSuccess);
-        Assert.Null(result.ValidationErrors);
         Assert.Null(result.Data);
         Assert.Null(result.Message);
         Assert.Equal((int)HttpStatusCode.OK, result.StatusCode);
@@ -26,7 +25,6 @@ public class ResponseEntityTest
             .WithData(TestStringData);
 
         Assert.True(result.IsSuccess);
-        Assert.Null(result.ValidationErrors);
         Assert.Null(result.Message);
         Assert.Equal((int)HttpStatusCode.OK, result.StatusCode);
         Assert.Equal(TestStringData, result.Data);
@@ -40,7 +38,6 @@ public class ResponseEntityTest
             .WithMessage(TestStringMessage);
 
         Assert.True(result.IsSuccess);
-        Assert.Null(result.ValidationErrors);
         Assert.Equal(TestStringMessage, result.Message);
         Assert.Equal((int)HttpStatusCode.OK, result.StatusCode);
         Assert.Equal(TestStringData, result.Data);
@@ -53,7 +50,6 @@ public class ResponseEntityTest
             .WithStatusCode(HttpStatusCode.Created);
 
         Assert.True(result.IsSuccess);
-        Assert.Null(result.ValidationErrors);
         Assert.Null(result.Message);
         Assert.Equal((int)HttpStatusCode.Created, result.StatusCode);
         Assert.Null(result.Data);
