@@ -14,6 +14,8 @@ public class ResponseEntity<T>
     
     public int StatusCode { get; private set; }
     
+    public Dictionary<string, string>? ValidationErrors { get; protected set; }
+    
     [JsonConstructor]
     public ResponseEntity() { }
 
